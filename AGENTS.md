@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository is a documentation portal template for [Revdoku](https://revdoku.com): API portal. API reference from an OpenAPI file, a console, quickstart and guides.
+This repository is a documentation portal template for [Revdoku](https://revdoku.com): API portal. API reference from an OpenAPI file with a playground, quickstart and guides.
 Revdoku publishes it as a docs site (Mintlify-compatible) with search, an Ask box, an MCP server for AI agents and `llms.txt`.
 
 ## How it goes live
@@ -13,7 +13,7 @@ Revdoku publishes it as a docs site (Mintlify-compatible) with search, an Ask bo
 
 - `docs.json` holds the site name, colors and the navigation. A page that `navigation` does not list stays out of the sidebar. List pages by path without the extension.
 - Pages are `.mdx` or `.md` files. Start each with front matter: `title` and `description`.
-- `api-reference/openapi.json` is the OpenAPI document (`openapi` in `docs.json`). Each tag becomes a reference page and the site gets an API console. Replace it with the real API's document.
+- `api-reference/openapi.json` is the OpenAPI document (`openapi` in `docs.json`). Each tag becomes a reference page, and each endpoint gets a **Try it** button that sends a request from the browser (the API must allow browser requests, CORS). Replace it with the real API's document.
 - `quickstart.mdx` is the first call; `guides/` holds authentication and errors. Keep them true to the real API.
 
 ## Rules
